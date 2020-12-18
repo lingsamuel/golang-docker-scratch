@@ -10,6 +10,9 @@ make docker
 # custom image tag
 make docker IMAGE_TAG="go-test"
 docker run --rm go-test
+
+# use make run
+make run IMAGE_TAG="go-test"
 ```
 
 ## GO Proxy
@@ -28,6 +31,12 @@ to:
 
 ```dockerfile
 RUN --mount=type=cache,target=/root/.cache/go-build CGO_ENABLED=0 go build -ldflags '-extldflags "-static"' -o output/main ./cmd/root.go
+```
+
+Then build with:
+
+```bash
+DOCKER_BUILDKIT=1 docker build -f ./Dockerfile -t "go-scratch" .
 ```
 
 ## Special Notes

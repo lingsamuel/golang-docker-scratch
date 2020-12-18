@@ -7,5 +7,5 @@ clean:
 	rm -rf output
 docker:
 	DOCKER_BUILDKIT=1 docker build -f ./Dockerfile -t $(IMAGE_TAG) .
-run: build docker
-	docker run $(IMAGE_TAG)
+run: docker
+	docker run --rm $(IMAGE_TAG)
