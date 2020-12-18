@@ -6,6 +6,8 @@ Use docker build-kit to speed up containerized golang build.
 
 Comes from: [jeremyhuiskamp/golang-docker-scratch](https://github.com/jeremyhuiskamp/golang-docker-scratch)
 
+This is a `Template` repo, you can click the `Use this template` button to generate new repo with same files.
+
 ## Usage
 
 ```bash
