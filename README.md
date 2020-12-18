@@ -2,6 +2,8 @@
 
 Use docker build-kit to speed up containerized golang build.
 
+Comes from: [jeremyhuiskamp/golang-docker-scratch](https://github.com/jeremyhuiskamp/golang-docker-scratch)
+
 ## Usage
 
 ```bash
@@ -15,7 +17,7 @@ docker run --rm go-test
 make run IMAGE_TAG="go-test"
 ```
 
-## GO Proxy
+## GOPROXY
 
 Change `ENV GOPROXY=https://goproxy.cn` in Dockerfile.
 
