@@ -1,5 +1,5 @@
 SHELL = /bin/bash
-IMAGE_TAG := image_tag
+IMAGE_TAG := go-scratch
 
 build:
 	CGO_ENABLED=0 go build -ldflags '-extldflags "-static"' -o output/main ./cmd/root.go

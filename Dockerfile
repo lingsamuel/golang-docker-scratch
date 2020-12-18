@@ -43,5 +43,5 @@ RUN --mount=type=cache,target=/root/.cache/go-build make build
 # ---------------
 
 FROM base
-COPY --from=golang /go/src/app/output/sqlproxy /
-ENTRYPOINT ["/sqlproxy"]
+COPY --from=golang /go/src/app/output/main /
+ENTRYPOINT ["/main"]
