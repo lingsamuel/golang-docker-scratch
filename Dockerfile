@@ -1,6 +1,6 @@
 #syntax=docker/dockerfile:1.2
 
-# Origin from https://github.com/jeremyhuiskamp/golang-docker-scratch/blob/master/Dockerfile
+# Origin from https://github.com/jeremyhuiskamp/golang-docker-scratch/blob/026ddd6232ecf1f28974f404d6b8247b9d2cf4df/Dockerfile
 
 # ---------------------
 # Prepare scratch image
