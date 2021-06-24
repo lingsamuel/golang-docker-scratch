@@ -33,7 +33,7 @@ ENV GOPROXY=https://goproxy.cn
 
 # install deps first
 COPY go.* ./
-RUN go mod download
+RUN go mod tidy
 # Use .dockerignore to make sure unrelated changes won't invalidates cache
 COPY . .
 RUN --mount=type=cache,target=/root/.cache/go-build make build
